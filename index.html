@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- El atributo lang="es" mejora la accesibilidad y SEO, indicando que el contenido está en español -->
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- Codificación UTF-8 para soportar caracteres en español correctamente -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <!-- Hace que la página sea responsive (adaptable a móviles y tablets) -->
+
+  <title>PlayStation 5 - Ficha del Producto</title>
+
+  <style>
+    /* Estilos generales con alto contraste (texto claro sobre fondo oscuro) para mejorar legibilidad */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to bottom, #000428, #004e92);
+      color: #f1f1f1;
+    }
+
+    header, nav, main, footer {
+      padding: 1rem 2rem;
+    }
+
+    header {
+      text-align: center;
+      background-color: #111;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #1a1a1a;
+    }
+
+    nav a {
+      color: #4da6ff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+
+    .producto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .producto img {
+      max-width: 400px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    }
+
+    .producto-info {
+      max-width: 600px;
+    }
+
+    h1, h2, h3 {
+      color: #ffffff;
+    }
+
+    ul {
+      list-style: square;
+      padding-left: 1.5rem;
+    }
+
+    aside {
+      background-color: #222;
+      margin: 2rem;
+      padding: 1rem;
+      border-left: 5px solid #4da6ff;
+    }
+
+    form {
+      background-color: #1a1a1a;
+      padding: 1rem;
+      margin: 2rem 0;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin: 0.5rem 0 1rem 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #4da6ff;
+      color: white;
+      padding: 0.6rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #111;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Encabezado principal de la página -->
+  <header>
+    <h1>PlayStation 5</h1>
+    <p>Vive el futuro del gaming con potencia, velocidad y una experiencia envolvente</p>
+  </header>
+
+  <!-- Barra de navegación principal. Se usa aria-label para accesibilidad de lectores de pantalla -->
+  <nav aria-label="Navegación principal">
+    <a href="#caracteristicas">Características</a>
+    <a href="#dualsense">DualSense</a>
+    <a href="#opiniones">Opiniones</a>
+    <a href="#opinar">Deja tu opinión</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- Contenido principal de la página -->
+  <main>
+
+    <!-- Sección de características de la consola, organizada con imagen + artículo descriptivo -->
+    <section class="producto">
+      <img src="ps5.webp" alt="Consola PlayStation 5 vista frontal y lateral" />
+      <!-- El atributo alt proporciona una descripción de la imagen para personas con discapacidad visual -->
+
+      <article class="producto-info">
+        <h2 id="caracteristicas">Características de la consola</h2>
+        <ul>
+          <!-- Uso de lista para presentar especificaciones técnicas de manera clara y estructurada -->
+          <li><strong>Procesador:</strong> CPU AMD Ryzen Zen 2 de 8 núcleos a 3.5 GHz</li>
+          <li><strong>GPU:</strong> AMD RDNA 2 personalizada con 10.28 teraflops</li>
+          <li><strong>Memoria RAM:</strong> 16 GB GDDR6</li>
+          <li><strong>Almacenamiento:</strong> SSD ultra rápido de 825 GB</li>
+          <li><strong>Resolución:</strong> Hasta 8K y soporte para 4K a 120 Hz</li>
+          <li><strong>Audio 3D:</strong> Tecnología Tempest 3D AudioTech</li>
+          <li><strong>Compatibilidad:</strong> Compatible con juegos de PS4</li>
+        </ul>
+        <p>La PlayStation 5 redefine lo que significa jugar...</p>
+      </article>
+    </section>
+
+    <!-- Sección del control DualSense -->
+    <section class="producto">
+      <img src="control.webp" alt="Mando DualSense de PlayStation 5 con luz azul encendida" />
+      <article class="producto-info">
+        <h2 id="dualsense">Características del mando DualSense</h2>
+        <ul>
+          <li><strong>Retroalimentación háptica:</strong> Siente cada impacto...</li>
+          <li><strong>Gatillos adaptativos:</strong> Resistencia dinámica según la acción...</li>
+          <li><strong>Micrófono incorporado:</strong> Chatea sin auriculares.</li>
+          <li><strong>Batería:</strong> Recargable con USB-C de larga duración.</li>
+          <li><strong>Botón "Crear":</strong> Captura y transmite partidas fácilmente.</li>
+          <li><strong>Diseño ergonómico:</strong> Mayor comodidad y precisión.</li>
+        </ul>
+        <p>El mando DualSense transforma tu forma de jugar...</p>
+      </article>
+    </section>
+
+    <!-- Sección complementaria con opiniones de usuarios -->
+    <aside>
+      <h3 id="opiniones">Opiniones de usuarios</h3>
+      <!-- Uso de párrafos para opiniones destacadas. Podrían reemplazarse por <blockquote> si se desea -->
+      <p><strong>Ana G.:</strong> “La velocidad de carga es increíble...”</p>
+      <p><strong>Carlos M.:</strong> “El DualSense cambia por completo...”</p>
+    </aside>
+
+    <!-- Formulario de opiniones, con etiquetas <label> correctamente asociadas para accesibilidad -->
+    <section>
+      <h2 id="opinar">Deja tu opinión</h2>
+      <form>
+        <label for="nombre-opinion">Nombre:</label>
+        <input type="text" id="nombre-opinion" name="nombre-opinion" required />
+
+        <label for="opinion">Tu opinión:</label>
+        <textarea id="opinion" name="opinion" rows="4" required></textarea>
+
+        <button type="submit" aria-label="Enviar opinión del producto">Enviar opinión</button>
+        <!-- aria-label usado para describir el propósito del botón a lectores de pantalla -->
+      </form>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section>
+      <h2 id="contacto">Contáctanos</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+        <button type="submit" aria-label="Enviar formulario de contacto">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Pie de página con información legal -->
+  <footer>
+    <p>&copy; 2025 GamerWorld S.A.S. - Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
+
